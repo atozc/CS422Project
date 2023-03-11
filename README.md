@@ -8,7 +8,7 @@ CONTENTS OF THIS FILE
 
 DESCRIPTION
 -----------------------
-This project creates decision trees and random forests using python data storage methods. The 
+This project creates decision trees using python data storage methods. The 
 decision trees are created by having functions that train, test, and predict. The decision trees use data from .csv test files.
 
 PROGRAM RUNNING INSTRUCTIONS
