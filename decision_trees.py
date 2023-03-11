@@ -147,30 +147,3 @@ def DT_make_prediction(x, DT):
             div = div[1]["div"]
     return div
 
-
-"""
-def RF_build_random_forest(X, Y, max_depth, num_ofTrees):
-    random_forest_sub_tree = []
-
-    for i in range(num_ofTrees):
-        sample = data(frac=1, replace=True)
-
-        X = removeFeatureToBranch(sample)[0]
-        Y = removeFeatureToBranch(sample)[1]
-
-        random_forest_sub_tree.append(conditionToBranch(X, Y,
-                                      X.drop(labels=['target'], axis=1).columns))
-
-    return random_forest_sub_tree
-
-
-def RF_test_random_forest(X, Y, RF):
-    data['predictions'] = None
-    for i in range(len(data)):
-        query = data.iloc[i, :].drop('target').to_dict()
-        data.loc[i, 'predictions'] = RandomForest_Predict(
-            query, random_forest, default='p')
-    accuracy = sum(data['predictions'] == data['target'])/len(data)*100
-
-    return accuracy
-"""
